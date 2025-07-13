@@ -38,6 +38,9 @@
                     <a href="#Services" class="block py-2 md:py-0 hover:text-pink-500 hover:border-b-2 hover:border-pink-500 pb-1 transition-all duration-150">Services</a>
                 </li>
                 <li>
+                    <a href="#testimonials" class="block py-2 md:py-0 hover:text-pink-500 hover:border-b-2 hover:border-pink-500 pb-1 transition-all duration-150">Testimonials</a>
+                </li>
+                <li>
                     <a href="#join-team" class="block py-2 md:py-0 hover:text-pink-500 hover:border-b-2 hover:border-pink-500 pb-1 transition-all duration-150">Join Us</a>
                 </li>
                 <li>
@@ -676,33 +679,33 @@
     // Services section animations
     ScrollTrigger.create({
       trigger: "#Services",
-      start: "top 80%",
+      start: "top 60%", // Trigger later in scroll
       onEnter: () => {
         gsap.timeline()
           .from("#Services h1", { 
             y: 50, 
             opacity: 0, 
-            duration: 0.7, 
-            ease: "power3.out" 
+            duration: 1.2, // Slower
+            ease: "power2.out" // Smoother
           })
           .from("#Services p", { 
             y: 30, 
             opacity: 0, 
-            duration: 0.6, 
-            ease: "power3.out" 
-          }, "-=0.4")
+            duration: 1.1, // Slower
+            ease: "power2.out" 
+          }, "-=0.7")
           .from(".div1", { 
             x: -100, 
             opacity: 0, 
-            duration: 0.8, 
-            ease: "power3.out" 
-          }, "-=0.2")
+            duration: 1.3, // Slower
+            ease: "power2.out" 
+          }, "-=0.6")
           .from(".div2", { 
             x: 100, 
             opacity: 0, 
-            duration: 0.8, 
-            ease: "power3.out" 
-          }, "-=0.6");
+            duration: 1.3, // Slower
+            ease: "power2.out" 
+          }, "-=1.0");
       }
     });
 
@@ -856,17 +859,18 @@
       }
     });
 
-    // Smooth scrolling for navigation links
+    // Smooth scrolling for navigation links (native, reliable)
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-          gsap.to(window, {
-            duration: 0.8,
-            scrollTo: target,
-            ease: "power2.inOut"
-          });
+        const href = this.getAttribute('href');
+        if (href && href.length > 1 && href.startsWith('#')) {
+          const target = document.querySelector(href);
+          if (target) {
+            e.preventDefault();
+            const yOffset = -document.querySelector('nav').offsetHeight || 0;
+            const y = target.getBoundingClientRect().top + window.pageYOffset + yOffset;
+            window.scrollTo({ top: y, behavior: 'smooth' });
+          }
         }
       });
     });
