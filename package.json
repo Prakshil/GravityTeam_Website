@@ -1,0 +1,13 @@
+{
+  "name": "gq-ui",
+  "version": "1.0.0",
+  "description": "A Tailwind CSS project",
+  "main": "src/index.html",
+  "scripts": {
+    "start": "tailwindcss -i ./src/input.css -o ./src/output.css --watch",
+    "build": "tailwindcss -i ./src/input.css -o ./src/output.css --minify"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
+  }
+}
