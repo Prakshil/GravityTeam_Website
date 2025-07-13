@@ -4,17 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gravity Team - Advanced Crypto Trading Solutions</title>
-    <link rel="stylesheet" href="../src/output.css">
+    <link rel="stylesheet" href="./src/output.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Abel&family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Fjalla+One&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
 
 </head>
 <body class="bg-background text-light">
     <nav id="navbar">
         <div class="wrapper flex flex-col md:flex-row justify-between items-center py-4 md:py-6 fixed top-0 left-0 right-0 z-50 bg-background shadow-glow px-4 md:px-0">  
             <div class="image flex items-center justify-between w-full md:w-auto px-2 md:px-6">
-                <img src="../Assets/logo-light.png.png" alt="Gravity Team Logo" class="h-6 md:h-8">
+                <img src="./Assets/logo-light.png.png" alt="Gravity Team Logo" class="h-6 md:h-8">
                 
                 <button class="md:hidden text-light hover:text-pink-500 transition-colors duration-300" onclick="toggleMobileMenu()">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -44,7 +47,7 @@
             
             <div class="nav-btns hidden md:flex items-center gap-2 px-6">
                 <span class="dot text-pink-500">●</span>
-                <button class="btn btn-primary hover:text-pink-500 px-4 py-2   transition-all duration-300">Get In Touch</button>
+                <button class="btn btn-primary hover:text-pink-500 px-4 py-2 transition-all duration-300">Get In Touch</button>
             </div>
         </div>
     </nav>
@@ -59,18 +62,18 @@
     <section id="hero" class="bg-[linear-gradient(to_right,#8780852e_1px,transparent_1px),linear-gradient(to_bottom,#8780852e_1px,transparent_1px)] bg-[size:47px_32px] pb-16 md:pb-32 pt-20 md:pt-0">
         <div class="mx-auto max-w-4xl py-20 sm:py-32 md:py-40 lg:py-64 px-4">
           <div class="text-center">
-            <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-semibold tracking-tight text-balance text-light leading-tight">
+            <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-display font-bold tracking-tight text-balance text-light leading-tight">
               Balancing <br class="hidden sm:block"> 
               Crypto Markets 
             </h1>
-            <h2 class="mt-4 text-lg sm:text-xl md:text-2xl font-medium text-secondary px-4">Advanced Trading Solutions for the Modern Investor</h2>
+            <h2 class="mt-4 text-lg sm:text-xl md:text-2xl font-abel font-normal text-secondary px-4 tracking-wide">Advanced Trading Solutions for the Modern Investor</h2>
             <div class="line w-[10rem] sm:w-[12rem] md:w-[15rem] h-[3px] md:h-[5px] mx-auto my-6 md:my-8 bg-gradient-to-r from-transparent via-pink-500 to-transparent"></div>
-            <p class="mt-6 md:mt-8 text-base sm:text-lg md:text-xl font-medium text-pretty text-gray-500 max-w-2xl lg:max-w-3xl mx-auto px-4">
+            <p class="mt-6 md:mt-8 text-base sm:text-lg md:text-xl font-sans font-normal text-pretty text-gray-500 max-w-2xl lg:max-w-3xl mx-auto px-4 leading-relaxed">
               Our proprietary technology ensures seamless integration with existing systems, providing a comprehensive solution for all your trading needs.
             </p>
             <div class="mt-8 md:mt-10 flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-x-6 px-4">
-              <a href="#Services" class="w-full sm:w-auto rounded-md bg-pink-500 px-6 py-3 text-sm font-semibold text-white shadow-xs hover:bg-pink-600 transition-all duration-150 text-center">Get started</a>
-              <a href="#about-us" class="w-full sm:w-auto text-sm font-semibold text-pink-500 transition-all duration-150 hover:text-pink-600 text-center">Learn more <span aria-hidden="true">→</span></a>
+              <a href="#Services" class="w-full sm:w-auto rounded-lg bg-pink-500 px-8 py-4 text-sm font-display font-semibold text-white shadow-lg hover:bg-pink-600 hover:shadow-xl transition-all duration-300 text-center transform hover:scale-105">Get started</a>
+              <a href="#about-us" class="w-full sm:w-auto text-sm font-abel font-medium text-pink-500 transition-all duration-300 hover:text-pink-600 text-center tracking-wide">Learn more <span aria-hidden="true" class="font-mono">→</span></a>
             </div>
           </div>
         </div>
@@ -79,111 +82,111 @@
     <section id="marquee" class="mb-16 md:mb-32">
         <div class="marquee overflow-hidden bg-gradient-to-r from-primary to-accent py-6 md:py-8">
             <div class="marquee-content flex items-center gap-6 md:gap-10 px-4 md:px-8 whitespace-nowrap animate-marquee">
-                <span class="text-xl md:text-2xl font-semibold text-background">Gravity Team</span>
-                <span class="text-xl md:text-2xl font-semibold text-background">•</span>
-                <span class="text-xl md:text-2xl font-semibold text-background">CRYPTO TRADING</span>
-                <span class="text-xl md:text-2xl font-semibold text-background">•</span>
-                <span class="text-xl md:text-2xl font-semibold text-background">MARKET BALANCE</span>
-                <span class="text-xl md:text-2xl font-semibold text-background">•</span>
-                <span class="text-xl md:text-2xl font-semibold text-background">GQ UI</span>
-                <span class="text-xl md:text-2xl font-semibold text-background">•</span>
-                <span class="text-xl md:text-2xl font-semibold text-background">CRYPTO TRADING</span>
-                <span class="text-xl md:text-2xl font-semibold text-background">•</span>
-                <span class="text-xl md:text-2xl font-semibold text-background">MARKET BALANCE</span>
-                <span class="text-xl md:text-2xl font-semibold text-background">•</span>
-                <span class="text-xl md:text-2xl font-semibold text-background">Stochastic Analysis</span>
-                <span class="text-xl md:text-2xl font-semibold text-background">•</span>
-                <span class="text-xl md:text-2xl font-semibold text-background">STOCK MARKET</span>
-                <span class="text-xl md:text-2xl font-semibold text-background">•</span>
-                <span class="text-xl md:text-2xl font-semibold text-background">Gravity Team</span>
+                <span class="text-xl md:text-2xl font-mono font-bold text-background tracking-wider">GRAVITY TEAM</span>
+                <span class="text-xl md:text-2xl font-abel font-normal text-background">•</span>
+                <span class="text-xl md:text-2xl font-mono font-bold text-background tracking-wider">CRYPTO TRADING</span>
+                <span class="text-xl md:text-2xl font-abel font-normal text-background">•</span>
+                <span class="text-xl md:text-2xl font-mono font-bold text-background tracking-wider">MARKET BALANCE</span>
+                <span class="text-xl md:text-2xl font-abel font-normal text-background">•</span>
+                <span class="text-xl md:text-2xl font-mono font-bold text-background tracking-wider">Trade Network</span>
+                <span class="text-xl md:text-2xl font-abel font-normal text-background">•</span>
+                <span class="text-xl md:text-2xl font-mono font-bold text-background tracking-wider">CRYPTO TRADING</span>
+                <span class="text-xl md:text-2xl font-abel font-normal text-background">•</span>
+                <span class="text-xl md:text-2xl font-mono font-bold text-background tracking-wider">MARKET BALANCE</span>
+                <span class="text-xl md:text-2xl font-abel font-normal text-background">•</span>
+                <span class="text-xl md:text-2xl font-mono font-bold text-background tracking-wider">STOCHASTIC ANALYSIS</span>
+                <span class="text-xl md:text-2xl font-abel font-normal text-background">•</span>
+                <span class="text-xl md:text-2xl font-mono font-bold text-background tracking-wider">STOCK MARKET</span>
+                <span class="text-xl md:text-2xl font-abel font-normal text-background">•</span>
+                <span class="text-xl md:text-2xl font-mono font-bold text-background tracking-wider">GRAVITY TEAM</span>
             </div>
         </div>
     </section>
 
     <section id="about-us" class="mt-16 md:mt-32 py-12 md:py-20 px-4">
         <div class="info">
-            <h2 class="text-3xl md:text-4xl font-semibold text-center text-light mb-6 md:mb-8">About Gravity Team</h2>
-            <p class="text-base md:text-lg text-center text-gray-500 max-w-3xl mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-display font-bold text-center text-light mb-6 md:mb-8 tracking-tight">About Gravity Team</h2>
+            <p class="text-base md:text-lg font-sans text-center text-gray-500 max-w-3xl mx-auto px-4 leading-relaxed">
                 Gravity Team is a leading provider of advanced trading solutions, specializing in crypto markets. Our mission is to empower investors with cutting-edge technology and insights to achieve market balance and optimize trading strategies.
             </p>
         </div>
         <div class="line w-[10rem] sm:w-[12rem] md:w-[15rem] h-[3px] md:h-[5px] mx-auto my-6 md:my-8 bg-gradient-to-r from-transparent via-pink-500 to-transparent mb-4 "></div>
 
         <div class="card-box mt-8 md:mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-8 px-4 max-w-7xl mx-auto">
-            <div class="card bg-background shadow-glow rounded-lg mt-8 p-6 group hover:bg-gradient-to-r from-primary to-accent transition-all duration-300">
-                <h3 class="text-2xl font-semibold text-center mb-4 text-light group-hover:text-white transition-all duration-300">Our Vision</h3>
-                <p class="text-gray-500 text-center group-hover:text-white transition-all duration-300">To revolutionize the trading landscape by providing innovative solutions that enhance market efficiency and investor confidence.</p>
+            <div class="card bg-background shadow-glow rounded-xl mt-8 p-8 group hover:bg-gradient-to-r from-primary to-accent transition-all duration-500 border border-gray-800/50 hover:border-pink-500/30">
+                <h3 class="text-2xl font-display font-bold text-center mb-4 text-light group-hover:text-white transition-all duration-300">Our Vision</h3>
+                <p class="text-gray-500 font-sans text-center group-hover:text-white transition-all duration-300 leading-relaxed">To revolutionize the trading landscape by providing innovative solutions that enhance market efficiency and investor confidence.</p>
             </div>
-            <div class="card bg-background shadow-glow rounded-lg mt-8 p-6 group hover:bg-gradient-to-r from-primary to-accent transition-all duration-300">
-                <h3 class="text-2xl font-semibold text-center mb-4 text-light group-hover:text-white transition-all duration-300">Our Mission</h3>
-                <p class="text-gray-500 text-center group-hover:text-white transition-all duration-300">To deliver state-of-the-art trading tools and insights that empower investors to make informed decisions in the dynamic crypto market.</p>
+            <div class="card bg-background shadow-glow rounded-xl mt-8 p-8 group hover:bg-gradient-to-r from-primary to-accent transition-all duration-500 border border-gray-800/50 hover:border-pink-500/30">
+                <h3 class="text-2xl font-display font-bold text-center mb-4 text-light group-hover:text-white transition-all duration-300">Our Mission</h3>
+                <p class="text-gray-500 font-sans text-center group-hover:text-white transition-all duration-300 leading-relaxed">To deliver state-of-the-art trading tools and insights that empower investors to make informed decisions in the dynamic crypto market.</p>
             </div>
-            <div class="card bg-background shadow-glow rounded-lg mt-8 p-6 group hover:bg-gradient-to-r from-primary to-accent transition-all duration-300">
-                <h3 class="text-2xl font-semibold text-center mb-4 text-light group-hover:text-white transition-all duration-300">Advanced Analytics</h3>
-                <p class="text-gray-500 text-center group-hover:text-white transition-all duration-300">Leverage cutting-edge stochastic analysis and machine learning algorithms to predict market trends and optimize trading strategies.</p>
+            <div class="card bg-background shadow-glow rounded-xl mt-8 p-8 group hover:bg-gradient-to-r from-primary to-accent transition-all duration-500 border border-gray-800/50 hover:border-pink-500/30">
+                <h3 class="text-2xl font-display font-bold text-center mb-4 text-light group-hover:text-white transition-all duration-300">Advanced Analytics</h3>
+                <p class="text-gray-500 font-sans text-center group-hover:text-white transition-all duration-300 leading-relaxed">Leverage cutting-edge stochastic analysis and machine learning algorithms to predict market trends and optimize trading strategies.</p>
             </div>
-            <div class="card bg-background shadow-glow rounded-lg mt-8 p-6 group hover:bg-gradient-to-r from-primary to-accent transition-all duration-300">
-                <h3 class="text-2xl font-semibold text-center mb-4 text-light group-hover:text-white transition-all duration-300">Risk Management</h3>
-                <p class="text-gray-500 text-center group-hover:text-white transition-all duration-300">Comprehensive risk assessment tools that help you minimize losses while maximizing profit potential in volatile crypto markets.</p>
+            <div class="card bg-background shadow-glow rounded-xl mt-8 p-8 group hover:bg-gradient-to-r from-primary to-accent transition-all duration-500 border border-gray-800/50 hover:border-pink-500/30">
+                <h3 class="text-2xl font-display font-bold text-center mb-4 text-light group-hover:text-white transition-all duration-300">Risk Management</h3>
+                <p class="text-gray-500 font-sans text-center group-hover:text-white transition-all duration-300 leading-relaxed">Comprehensive risk assessment tools that help you minimize losses while maximizing profit potential in volatile crypto markets.</p>
             </div>
-            <div class="card bg-background shadow-glow rounded-lg mt-8 p-6 group hover:bg-gradient-to-r from-primary to-accent transition-all duration-300">
-                <h3 class="text-2xl font-semibold text-center mb-4 text-light group-hover:text-white transition-all duration-300">Real-Time Insights</h3>
-                <p class="text-gray-500 text-center group-hover:text-white transition-all duration-300">Get instant market data, live trading signals, and real-time portfolio performance tracking across multiple exchanges.</p>
+            <div class="card bg-background shadow-glow rounded-xl mt-8 p-8 group hover:bg-gradient-to-r from-primary to-accent transition-all duration-500 border border-gray-800/50 hover:border-pink-500/30">
+                <h3 class="text-2xl font-display font-bold text-center mb-4 text-light group-hover:text-white transition-all duration-300">Real-Time Insights</h3>
+                <p class="text-gray-500 font-sans text-center group-hover:text-white transition-all duration-300 leading-relaxed">Get instant market data, live trading signals, and real-time portfolio performance tracking across multiple exchanges.</p>
             </div>
-            <div class="card bg-background shadow-glow rounded-lg mt-8 p-6 group hover:bg-gradient-to-r from-primary to-accent transition-all duration-300">
-                <h3 class="text-2xl font-semibold text-center mb-4 text-light group-hover:text-white transition-all duration-300">Expert Support</h3>
-                <p class="text-gray-500 text-center group-hover:text-white transition-all duration-300">24/7 dedicated support from our team of trading experts and technical specialists to guide your investment journey.</p>
+            <div class="card bg-background shadow-glow rounded-xl mt-8 p-8 group hover:bg-gradient-to-r from-primary to-accent transition-all duration-500 border border-gray-800/50 hover:border-pink-500/30">
+                <h3 class="text-2xl font-display font-bold text-center mb-4 text-light group-hover:text-white transition-all duration-300">Expert Support</h3>
+                <p class="text-gray-500 font-sans text-center group-hover:text-white transition-all duration-300 leading-relaxed">24/7 dedicated support from our team of trading experts and technical specialists to guide your investment journey.</p>
             </div>
         </div>
         
     </section>
 
-    <section id="counter" class="mt-16 md:mt-24 py-12 md:py-20 bg-[url('../Assets/c-1.jpg')] bg-cover bg-center bg-no-repeat relative ">
+    <section id="counter" class="mt-16 md:mt-24 py-12 md:py-20 bg-[url('../Assets/c-1.jpg')] bg-cover bg-center bg-no-repeat bg-fixed relative ">
         <!-- Gradient overlay above the image for better text readability -->
-        <div class="absolute inset-0 bg-black/50 blur-lg"></div>
+        <div class="absolute inset-0 bg-black/60 backdrop-blur-lg"></div>
         
         <div class="container mx-auto max-w-7xl px-4 relative z-10">
             <div class="text-center mb-12">
-                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4 counter-title">Trusted by Traders Worldwide</h2>
-                <p class="text-lg text-white/90 counter-subtitle">Join thousands of successful traders who trust our platform</p>
+                <h2 class="text-3xl md:text-4xl font-display font-bold text-white mb-4 counter-title tracking-tight">Trusted by Traders Worldwide</h2>
+                <p class="text-lg font-abel text-white/90 counter-subtitle tracking-wide">Join thousands of successful traders who trust our platform</p>
             </div>
             
             <div class="row1 flex flex-wrap justify-center items-center gap-8 md:gap-12 mb-12">
                 <div class="col text-center counter-item">
-                    <h1 class="text-white text-4xl md:text-5xl lg:text-6xl mb-4 font-bold drop-shadow-lg counter-number" data-target="1234">0</h1>
-                    <h5 class="text-base md:text-lg font-medium text-white/90 drop-shadow-md">Total Trades</h5>
+                    <h1 class="text-white text-4xl md:text-5xl lg:text-6xl mb-4 font-mono font-bold drop-shadow-lg counter-number tracking-wider" data-target="1234">0</h1>
+                    <h5 class="text-base md:text-lg font-abel font-normal text-white/90 drop-shadow-md tracking-wide">Total Trades</h5>
                 </div>
                 <div class="col text-center counter-item">
-                    <h1 class="text-white text-4xl md:text-5xl lg:text-6xl mb-4 font-bold drop-shadow-lg counter-number" data-target="567">0</h1>
-                    <h5 class="text-base md:text-lg font-medium text-white/90 drop-shadow-md">Active Users</h5>
+                    <h1 class="text-white text-4xl md:text-5xl lg:text-6xl mb-4 font-mono font-bold drop-shadow-lg counter-number tracking-wider" data-target="567">0</h1>
+                    <h5 class="text-base md:text-lg font-abel font-normal text-white/90 drop-shadow-md tracking-wide">Active Users</h5>
                 </div>
                 <div class="col text-center counter-item">
-                    <h1 class="text-white text-4xl md:text-5xl lg:text-6xl mb-4 font-bold drop-shadow-lg counter-number" data-target="2500000">0</h1>
-                    <h5 class="text-base md:text-lg font-medium text-white/90 drop-shadow-md">Total Volume ($)</h5>
+                    <h1 class="text-white text-4xl md:text-5xl lg:text-6xl mb-4 font-mono font-bold drop-shadow-lg counter-number tracking-wider" data-target="2500000">0</h1>
+                    <h5 class="text-base md:text-lg font-abel font-normal text-white/90 drop-shadow-md tracking-wide">Total Volume ($)</h5>
                 </div>
             </div>
             
             <div class="row2 flex flex-wrap justify-center items-center gap-8 md:gap-12">
                 <div class="col text-center counter-item">
-                    <h1 class="text-white text-4xl md:text-5xl lg:text-6xl mb-4 font-bold drop-shadow-lg counter-number" data-target="99.9">0</h1>
-                    <h5 class="text-base md:text-lg font-medium text-white/90 drop-shadow-md">Uptime (%)</h5>
+                    <h1 class="text-white text-4xl md:text-5xl lg:text-6xl mb-4 font-mono font-bold drop-shadow-lg counter-number tracking-wider" data-target="99.9">0</h1>
+                    <h5 class="text-base md:text-lg font-abel font-normal text-white/90 drop-shadow-md tracking-wide">Uptime (%)</h5>
                 </div>
                 <div class="col text-center counter-item">
-                    <h1 class="text-white text-4xl md:text-5xl lg:text-6xl mb-4 font-bold drop-shadow-lg">24/7</h1>
-                    <h5 class="text-base md:text-lg font-medium text-white/90 drop-shadow-md">Support</h5>
+                    <h1 class="text-white text-4xl md:text-5xl lg:text-6xl mb-4 font-mono font-bold drop-shadow-lg tracking-wider">24/7</h1>
+                    <h5 class="text-base md:text-lg font-abel font-normal text-white/90 drop-shadow-md tracking-wide">Support</h5>
                 </div>
                 <div class="col text-center counter-item">
-                    <h1 class="text-white text-4xl md:text-5xl lg:text-6xl mb-4 font-bold drop-shadow-lg counter-number" data-target="150">0</h1>
-                    <h5 class="text-base md:text-lg font-medium text-white/90 drop-shadow-md">Countries</h5>
+                    <h1 class="text-white text-4xl md:text-5xl lg:text-6xl mb-4 font-mono font-bold drop-shadow-lg counter-number tracking-wider" data-target="150">0</h1>
+                    <h5 class="text-base md:text-lg font-abel font-normal text-white/90 drop-shadow-md tracking-wide">Countries</h5>
                 </div>
             </div>
         </div>
     </section>
 
     <section id="Services" class="mt-16 md:mt-32 py-12 md:py-20 px-4">
-        <h1 class="text-3xl md:text-4xl font-semibold text-center text-light mb-6 md:mb-8">Crypto Market Trading</h1>
+        <h1 class="text-3xl md:text-4xl font-display font-bold text-center text-light mb-6 md:mb-8 tracking-tight">Crypto Market Trading</h1>
 
-        <p class="text-base md:text-lg text-center text-gray-500 max-w-3xl mx-auto px-4">
+        <p class="text-base md:text-lg font-sans text-center text-gray-500 max-w-3xl mx-auto px-4 leading-relaxed">
             Our crypto market trading services provide you with the tools and insights needed to navigate the complex world of digital currencies. From real-time data analytics to automated trading strategies, we offer a comprehensive suite of solutions designed to enhance your trading experience.
         </p>
         <div class="line w-[15rem] h-[5px] mx-auto my-8 bg-gradient-to-r from-transparent via-pink-500 to-transparent mb-4 "></div>
@@ -191,26 +194,26 @@
 
         <div class="div1 mt-12 md:mt-20 flex flex-col lg:flex-row items-center justify-between gap-8 px-4 lg:px-20 w-full">
             <div class="image-box1 w-full lg:w-[50%] flex justify-center">
-                <img src="../Assets/exchange-screens-new.png.png" alt="Crypto Exchange Trading Platform" class="max-w-full h-auto">
+                <img src="./Assets/exchange-screens-new.png.png" alt="Crypto Exchange Trading Platform" class="max-w-full h-auto">
             </div>
             <div class="content1 w-full lg:w-[50%]">
-                <h1 class="text-2xl md:text-3xl lg:text-4xl font-semibold mb-6 md:mb-10 text-center lg:text-left">Market Making for Crypto Exchanges</h1>
-                <p class="text-base md:text-lg text-gray-500 mb-6 md:mb-10 text-center lg:text-left">Our market-making services for crypto exchanges are designed to enhance liquidity and improve trading conditions. We employ advanced algorithms and strategies to ensure that your exchange remains competitive and efficient.</p>
+                <h1 class="text-2xl md:text-3xl lg:text-4xl font-display font-bold mb-6 md:mb-10 text-center lg:text-left tracking-tight">Market Making for Crypto Exchanges</h1>
+                <p class="text-base md:text-lg font-sans text-gray-500 mb-6 md:mb-10 text-center lg:text-left leading-relaxed">Our market-making services for crypto exchanges are designed to enhance liquidity and improve trading conditions. We employ advanced algorithms and strategies to ensure that your exchange remains competitive and efficient.</p>
                 <div class="text-center lg:text-left">
-                    <a href="#testimonials" class="text-base md:text-lg font-semibold text-pink-500 transition-all duration-150 hover:text-pink-600">Learn more <span aria-hidden="true">→</span></a>
+                    <a href="#testimonials" class="text-base md:text-lg font-abel font-medium text-pink-500 transition-all duration-300 hover:text-pink-600 tracking-wide">Learn more <span aria-hidden="true" class="font-mono">→</span></a>
                 </div>
             </div>
         </div>
         <div class="div2 mt-12 md:mt-20 flex flex-col lg:flex-row-reverse items-center justify-between gap-8 px-4 lg:px-20 w-full">
             <div class="image-box2 w-full lg:w-[50%] flex justify-center">
-                <img src="../Assets/div.png" alt="Stochastic Analysis Dashboard" class="max-w-full h-auto">
+                <img src="./Assets/div.png" alt="Stochastic Analysis Dashboard" class="max-w-full h-auto">
             </div>
             <div class="content2 w-full lg:w-[50%]">
-                <h1 class="text-2xl md:text-3xl lg:text-4xl font-semibold mb-6 md:mb-10 text-center lg:text-left">Stochastic Analysis for Crypto Markets</h1>
+                <h1 class="text-2xl md:text-3xl lg:text-4xl font-display font-bold mb-6 md:mb-10 text-center lg:text-left tracking-tight">Stochastic Analysis for Crypto Markets</h1>
 
-                <p class="text-base md:text-lg text-gray-500 mb-6 md:mb-10 text-center lg:text-left">Our stochastic analysis services provide deep insights into crypto market trends and price movements. By leveraging advanced statistical models and machine learning techniques, we help you identify potential trading opportunities and manage risks effectively.</p>
+                <p class="text-base md:text-lg font-sans text-gray-500 mb-6 md:mb-10 text-center lg:text-left leading-relaxed">Our stochastic analysis services provide deep insights into crypto market trends and price movements. By leveraging advanced statistical models and machine learning techniques, we help you identify potential trading opportunities and manage risks effectively.</p>
                 <div class="text-center lg:text-left">
-                    <a href="#testimonials" class="text-base md:text-lg font-semibold text-pink-500 transition-all duration-150 hover:text-pink-600">Learn more <span aria-hidden="true">→</span></a>
+                    <a href="#testimonials" class="text-base md:text-lg font-abel font-medium text-pink-500 transition-all duration-300 hover:text-pink-600 tracking-wide">Learn more <span aria-hidden="true" class="font-mono">→</span></a>
                 </div>
             </div>
         </div>
@@ -219,28 +222,28 @@
   <section id="testimonials" class="mt-16 md:mt-32 py-12 md:py-20">
     <div class="container mx-auto max-w-7xl px-4">
       <div class="text-center mb-12 md:mb-16">
-        <h2 class="text-3xl md:text-4xl font-semibold text-light mb-6 md:mb-8">What Our Clients Say</h2>
-        <p class="text-base md:text-lg text-gray-500 max-w-3xl mx-auto px-4">
+        <h2 class="text-3xl md:text-4xl font-display font-bold text-light mb-6 md:mb-8 tracking-tight">What Our Clients Say</h2>
+        <p class="text-base md:text-lg font-sans text-gray-500 max-w-3xl mx-auto px-4 leading-relaxed">
           Discover how Gravity Team has transformed trading experiences for investors and exchanges worldwide through our cutting-edge solutions.
         </p>
         <div class="line w-[10rem] sm:w-[12rem] md:w-[15rem] h-[3px] md:h-[5px] mx-auto my-6 md:my-8 bg-gradient-to-r from-transparent via-pink-500 to-transparent"></div>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-        <div class="testimonial-card bg-background shadow-glow rounded-lg p-8 group hover:bg-gradient-to-r hover:from-primary/20 hover:to-accent/20 transition-all duration-300">
+        <div class="testimonial-card bg-background shadow-glow rounded-xl p-8 group hover:bg-gradient-to-r hover:from-primary/20 hover:to-accent/20 transition-all duration-500 border border-gray-800/50 hover:border-pink-500/30">
           <div class="mb-6">
             <div class="flex text-pink-500 mb-4">
-              <span class="text-xl">★★★★★</span>
+              <span class="text-xl font-mono">★★★★★</span>
             </div>
-            <p class="text-gray-400 text-lg leading-relaxed group-hover:text-white transition-all duration-300">
+            <p class="text-gray-400 text-lg font-sans leading-relaxed group-hover:text-white transition-all duration-300">
               "Gravity Team's market-making solutions increased our exchange's liquidity by 300%. Their algorithms are simply outstanding."
             </p>
           </div>
           <div class="flex items-center">
 
             <div>
-              <h4 class="text-light font-semibold group-hover:text-white transition-all duration-300">John Davis</h4>
-              <p class="text-gray-500 text-sm group-hover:text-white/80 transition-all duration-300">CEO, CryptoX Exchange</p>
+              <h4 class="text-light font-display font-semibold group-hover:text-white transition-all duration-300">John Davis</h4>
+              <p class="text-gray-500 text-sm font-abel group-hover:text-white/80 transition-all duration-300">CEO, CryptoX Exchange</p>
             </div>
           </div>
         </div>
@@ -351,7 +354,7 @@
       <div class="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12">
  
         <div class="w-full lg:w-[55%] text-center lg:text-left">
-          <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold text-light">
+          <h2 class="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-light tracking-tight">
             Join the <br>
             <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">Gravity Team</span>
           </h2>
@@ -360,25 +363,25 @@
         
     
         <div class="w-full lg:w-[45%] space-y-4 md:space-y-6 text-center lg:text-left">
-          <p class="text-base md:text-lg leading-relaxed text-gray-400">
+          <p class="text-base md:text-lg font-sans leading-relaxed text-gray-400">
             We're always looking for talented individuals who share our passion for innovation and excellence in the cryptocurrency trading space.
           </p>
           
-          <p class="text-base md:text-lg leading-relaxed text-gray-400">
+          <p class="text-base md:text-lg font-sans leading-relaxed text-gray-400">
             If you're ready to take on exciting challenges, work with cutting-edge technology, and contribute to shaping the future of financial markets, we want to hear from you.
           </p>
           
-          <p class="text-base md:text-lg leading-relaxed text-gray-400">
+          <p class="text-base md:text-lg font-sans leading-relaxed text-gray-400">
             Join our team of experts in market making, stochastic analysis, risk management, and algorithmic trading. Together, we're building the next generation of trading solutions.
           </p>
           
  
           <div class="pt-4 flex flex-col sm:flex-row items-center gap-4 sm:gap-6 justify-center lg:justify-start">
-            <button class="w-full sm:w-auto bg-pink-500 hover:bg-pink-600 text-white font-semibold px-6 md:px-8 py-3 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105">
+            <button class="w-full sm:w-auto bg-pink-500 hover:bg-pink-600 text-white font-display font-semibold px-8 md:px-10 py-4 rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 tracking-wide">
               Apply Now
             </button>
-            <a href="#footer" class="text-pink-500 hover:text-pink-400 font-medium transition-all duration-300">
-              View Open Positions →
+            <a href="#footer" class="text-pink-500 hover:text-pink-400 font-abel font-medium transition-all duration-300 tracking-wide">
+              View Open Positions <span class="font-mono">→</span>
             </a>
           </div>
         </div>
@@ -386,22 +389,22 @@
       
 
       <div class="mt-10 md:mt-16 grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
-        <div class="text-center p-6 bg-background/50 rounded-lg border border-gray-800 transition-all duration-300 hover:shadow-glow hover:scale-105">
+        <div class="text-center p-8 bg-background/50 rounded-xl border border-gray-800 transition-all duration-500 hover:shadow-glow hover:scale-105 hover:border-pink-500/30">
 
-          <h3 class="text-xl font-semibold text-light mb-3">Innovation First</h3>
-          <p class="text-gray-400 text-sm">Work with the latest technologies and contribute to groundbreaking solutions in crypto trading.</p>
+          <h3 class="text-xl font-display font-bold text-light mb-3">Innovation First</h3>
+          <p class="text-gray-400 text-sm font-sans leading-relaxed">Work with the latest technologies and contribute to groundbreaking solutions in crypto trading.</p>
         </div>
         
-        <div class="text-center p-6 bg-background/50 rounded-lg border border-gray-800 transition-all duration-300 hover:shadow-glow hover:scale-105">
+        <div class="text-center p-8 bg-background/50 rounded-xl border border-gray-800 transition-all duration-500 hover:shadow-glow hover:scale-105 hover:border-pink-500/30">
   
-          <h3 class="text-xl font-semibold text-light mb-3">Growth Opportunities</h3>
-          <p class="text-gray-400 text-sm">Advance your career in a fast-growing company with global reach and impact.</p>
+          <h3 class="text-xl font-display font-bold text-light mb-3">Growth Opportunities</h3>
+          <p class="text-gray-400 text-sm font-sans leading-relaxed">Advance your career in a fast-growing company with global reach and impact.</p>
         </div>
         
-        <div class="text-center p-6 bg-background/50 rounded-lg border border-gray-800 transition-all duration-300 hover:shadow-glow hover:scale-105">
+        <div class="text-center p-8 bg-background/50 rounded-xl border border-gray-800 transition-all duration-500 hover:shadow-glow hover:scale-105 hover:border-pink-500/30">
   
-          <h3 class="text-xl font-semibold text-light mb-3">Expert Team</h3>
-          <p class="text-gray-400 text-sm">Collaborate with industry leaders and learn from the best minds in financial technology.</p>
+          <h3 class="text-xl font-display font-bold text-light mb-3">Expert Team</h3>
+          <p class="text-gray-400 text-sm font-sans leading-relaxed">Collaborate with industry leaders and learn from the best minds in financial technology.</p>
         </div>
       </div>
     </div>
@@ -416,10 +419,10 @@
           <!-- Company Info -->
           <div class="lg:col-span-1 text-center md:text-left">
             <div class="flex items-center justify-center md:justify-start mb-4 md:mb-6">
-              <img src="../Assets/logo-light.png.png" alt="Gravity Team Logo" class="h-6 md:h-8 mr-3">
-              <span class="text-xl md:text-2xl font-semibold text-light">Gravity Team</span>
+              <img src="./Assets/logo-light.png.png" alt="Gravity Team Logo" class="h-6 md:h-8 mr-3">
+              <span class="text-xl md:text-2xl font-display font-bold text-light">Gravity Team</span>
             </div>
-            <p class="text-gray-400 text-sm leading-relaxed mb-6">
+            <p class="text-gray-400 text-sm font-sans leading-relaxed mb-6">
               Leading provider of advanced trading solutions, specializing in crypto markets with cutting-edge technology and expert insights.
             </p>
             <div class="flex space-x-4">
@@ -448,42 +451,42 @@
 
           <!-- Services -->
           <div>
-            <h3 class="text-lg font-semibold text-light mb-6">Services</h3>
+            <h3 class="text-lg font-display font-bold text-light mb-6">Services</h3>
             <ul class="space-y-3">
-              <li><a href="#" class="text-gray-400 hover:text-pink-500 transition-colors duration-300">Market Making</a></li>
-              <li><a href="#" class="text-gray-400 hover:text-pink-500 transition-colors duration-300">Stochastic Analysis</a></li>
-              <li><a href="#" class="text-gray-400 hover:text-pink-500 transition-colors duration-300">Risk Management</a></li>
-              <li><a href="#" class="text-gray-400 hover:text-pink-500 transition-colors duration-300">Real-time Insights</a></li>
-              <li><a href="#" class="text-gray-400 hover:text-pink-500 transition-colors duration-300">Algorithmic Trading</a></li>
+              <li><a href="#" class="text-gray-400 font-sans hover:text-pink-500 transition-colors duration-300">Market Making</a></li>
+              <li><a href="#" class="text-gray-400 font-sans hover:text-pink-500 transition-colors duration-300">Stochastic Analysis</a></li>
+              <li><a href="#" class="text-gray-400 font-sans hover:text-pink-500 transition-colors duration-300">Risk Management</a></li>
+              <li><a href="#" class="text-gray-400 font-sans hover:text-pink-500 transition-colors duration-300">Real-time Insights</a></li>
+              <li><a href="#" class="text-gray-400 font-sans hover:text-pink-500 transition-colors duration-300">Algorithmic Trading</a></li>
             </ul>
           </div>
 
           <!-- Company -->
           <div>
-            <h3 class="text-lg font-semibold text-light mb-6">Company</h3>
+            <h3 class="text-lg font-display font-bold text-light mb-6">Company</h3>
             <ul class="space-y-3">
-              <li><a href="#about-us" class="text-gray-400 hover:text-pink-500 transition-colors duration-300">About Us</a></li>
-              <li><a href="#partner" class="text-gray-400 hover:text-pink-500 transition-colors duration-300">Testimonials</a></li>
-              <li><a href="#join-team" class="text-gray-400 hover:text-pink-500 transition-colors duration-300">Careers</a></li>
-              <li><a href="#" class="text-gray-400 hover:text-pink-500 transition-colors duration-300">Blog</a></li>
-              <li><a href="#" class="text-gray-400 hover:text-pink-500 transition-colors duration-300">News</a></li>
+              <li><a href="#about-us" class="text-gray-400 font-sans hover:text-pink-500 transition-colors duration-300">About Us</a></li>
+              <li><a href="#partner" class="text-gray-400 font-sans hover:text-pink-500 transition-colors duration-300">Testimonials</a></li>
+              <li><a href="#join-team" class="text-gray-400 font-sans hover:text-pink-500 transition-colors duration-300">Careers</a></li>
+              <li><a href="#" class="text-gray-400 font-sans hover:text-pink-500 transition-colors duration-300">Blog</a></li>
+              <li><a href="#" class="text-gray-400 font-sans hover:text-pink-500 transition-colors duration-300">News</a></li>
             </ul>
           </div>
 
           <!-- Contact & Legal -->
           <div>
-            <h3 class="text-lg font-semibold text-light mb-6">Contact</h3>
+            <h3 class="text-lg font-display font-bold text-light mb-6">Contact</h3>
             <ul class="space-y-3 mb-6">
-              <li><a href="#" class="text-gray-400 hover:text-pink-500 transition-colors duration-300">Get In Touch</a></li>
-              <li><a href="#" class="text-gray-400 hover:text-pink-500 transition-colors duration-300">Support Center</a></li>
-              <li><a href="#" class="text-gray-400 hover:text-pink-500 transition-colors duration-300">API Documentation</a></li>
+              <li><a href="#" class="text-gray-400 font-sans hover:text-pink-500 transition-colors duration-300">Get In Touch</a></li>
+              <li><a href="#" class="text-gray-400 font-sans hover:text-pink-500 transition-colors duration-300">Support Center</a></li>
+              <li><a href="#" class="text-gray-400 font-sans hover:text-pink-500 transition-colors duration-300">API Documentation</a></li>
             </ul>
             
-            <h4 class="text-md font-semibold text-light mb-3">Legal</h4>
+            <h4 class="text-md font-display font-semibold text-light mb-3">Legal</h4>
             <ul class="space-y-2">
-              <li><a href="#" class="text-gray-400 hover:text-pink-500 transition-colors duration-300 text-sm">Privacy Policy</a></li>
-              <li><a href="#" class="text-gray-400 hover:text-pink-500 transition-colors duration-300 text-sm">Terms of Service</a></li>
-              <li><a href="#" class="text-gray-400 hover:text-pink-500 transition-colors duration-300 text-sm">Cookie Policy</a></li>
+              <li><a href="#" class="text-gray-400 font-sans hover:text-pink-500 transition-colors duration-300 text-sm">Privacy Policy</a></li>
+              <li><a href="#" class="text-gray-400 font-sans hover:text-pink-500 transition-colors duration-300 text-sm">Terms of Service</a></li>
+              <li><a href="#" class="text-gray-400 font-sans hover:text-pink-500 transition-colors duration-300 text-sm">Cookie Policy</a></li>
             </ul>
           </div>
         </div>
@@ -511,13 +514,13 @@
         <!-- Bottom Footer -->
         <div class="border-t border-gray-800 pt-6 md:pt-8">
           <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4 text-center md:text-left">
-            <p class="text-gray-400 text-sm">
-              © 2025 <span class="text-light font-semibold">Gravity Team</span>. All rights reserved. 
-              <span class="text-pink-500">Building the future of crypto trading.</span>
+            <p class="text-gray-400 font-sans text-sm">
+              © 2024 <span class="text-light font-display font-bold">GQ TRADING</span>. All rights reserved. 
+              <span class="text-pink-500 font-abel">Building the future of crypto trading.</span>
             </p>
             <div class="flex items-center justify-center md:justify-end space-x-6 text-sm">
-              <span class="text-gray-400">Powered by</span>
-              <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent font-semibold">Prakshil Patel</span>
+              <span class="text-gray-400 font-sans">Powered by</span>
+              <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent font-display font-semibold">Prakshil Patel</span>
             </div>
           </div>
         </div>
@@ -541,44 +544,44 @@
       .from("nav", { 
         y: -100, 
         opacity: 0, 
-        duration: 1, 
+        duration: 0.8, 
         ease: "power3.out" 
       })
       .from("#hero h1", { 
         y: 50, 
         opacity: 0, 
-        duration: 1.2, 
+        duration: 0.9, 
         ease: "power3.out" 
-      }, "-=0.5")
+      }, "-=0.4")
       .from("#hero h2", { 
         y: 30, 
         opacity: 0, 
-        duration: 1, 
+        duration: 0.7, 
         ease: "power3.out" 
-      }, "-=0.8")
+      }, "-=0.6")
       .from("#hero .line", { 
         width: 0, 
-        duration: 1, 
+        duration: 0.8, 
         ease: "power3.out" 
-      }, "-=0.5")
+      }, "-=0.4")
       .from("#hero p", { 
         y: 30, 
         opacity: 0, 
-        duration: 1, 
+        duration: 0.7, 
         ease: "power3.out" 
-      }, "-=0.6")
+      }, "-=0.5")
       .from("#hero .mt-8 a", { 
         y: 30, 
         opacity: 0, 
-        duration: 0.8, 
-        stagger: 0.2, 
+        duration: 0.6, 
+        stagger: 0.15, 
         ease: "power3.out" 
-      }, "-=0.4");
+      }, "-=0.3");
 
     // Marquee animation enhancement
     gsap.to(".marquee-content", {
       x: "-100%",
-      duration: 20,
+      duration: 15,
       ease: "none",
       repeat: -1
     });
@@ -592,27 +595,27 @@
           .to("#about-us h2", { 
             opacity: 1, 
             y: 0, 
-            duration: 1, 
+            duration: 0.7, 
             ease: "power3.out" 
           })
           .to("#about-us p", { 
             opacity: 1, 
             y: 0, 
-            duration: 1, 
+            duration: 0.6, 
             ease: "power3.out" 
-          }, "-=0.5")
+          }, "-=0.4")
           .to("#about-us .line", { 
             width: "15rem", 
-            duration: 1, 
+            duration: 0.7, 
             ease: "power3.out" 
-          }, "-=0.5")
+          }, "-=0.4")
           .to(".card", { 
             opacity: 1, 
             scale: 1, 
-            duration: 0.8, 
-            stagger: 0.2, 
+            duration: 0.6, 
+            stagger: 0.15, 
             ease: "back.out(1.7)" 
-          }, "-=0.3");
+          }, "-=0.2");
       }
     });
 
@@ -626,22 +629,22 @@
           .to(".counter-title", { 
             opacity: 1, 
             y: 0, 
-            duration: 1, 
+            duration: 0.7, 
             ease: "power3.out" 
           })
           .to(".counter-subtitle", { 
             opacity: 1, 
             y: 0, 
-            duration: 1, 
+            duration: 0.6, 
             ease: "power3.out" 
-          }, "-=0.5")
+          }, "-=0.4")
           .to(".counter-item", { 
             opacity: 1, 
             y: 0, 
-            duration: 0.8, 
-            stagger: 0.15, 
+            duration: 0.6, 
+            stagger: 0.1, 
             ease: "back.out(1.7)" 
-          }, "-=0.3");
+          }, "-=0.2");
 
         // Animate counters
         document.querySelectorAll('.counter-number').forEach(counter => {
@@ -650,8 +653,8 @@
           
           gsap.to(counter, {
             innerHTML: target,
-            duration: 2.5,
-            delay: 0.5,
+            duration: 1.8,
+            delay: 0.3,
             ease: "power2.out",
             snap: isDecimal ? { innerHTML: 0.1 } : { innerHTML: 1 },
             onUpdate: function() {
@@ -679,27 +682,27 @@
           .from("#Services h1", { 
             y: 50, 
             opacity: 0, 
-            duration: 1, 
+            duration: 0.7, 
             ease: "power3.out" 
           })
           .from("#Services p", { 
             y: 30, 
             opacity: 0, 
-            duration: 1, 
+            duration: 0.6, 
             ease: "power3.out" 
-          }, "-=0.5")
+          }, "-=0.4")
           .from(".div1", { 
             x: -100, 
             opacity: 0, 
-            duration: 1.2, 
+            duration: 0.8, 
             ease: "power3.out" 
-          }, "-=0.3")
+          }, "-=0.2")
           .from(".div2", { 
             x: 100, 
             opacity: 0, 
-            duration: 1.2, 
+            duration: 0.8, 
             ease: "power3.out" 
-          }, "-=0.8");
+          }, "-=0.6");
       }
     });
 
@@ -712,22 +715,22 @@
           .from("#testimonials h2", { 
             y: 50, 
             opacity: 0, 
-            duration: 1, 
+            duration: 0.7, 
             ease: "power3.out" 
           })
           .from("#testimonials > div > div > p", { 
             y: 30, 
             opacity: 0, 
-            duration: 1, 
+            duration: 0.6, 
             ease: "power3.out" 
-          }, "-=0.5")
+          }, "-=0.4")
           .to(".testimonial-card", { 
             opacity: 1, 
             x: 0, 
-            duration: 0.8, 
-            stagger: 0.2, 
+            duration: 0.6, 
+            stagger: 0.15, 
             ease: "back.out(1.7)" 
-          }, "-=0.3");
+          }, "-=0.2");
       }
     });
 
@@ -740,30 +743,30 @@
           .from("#join-team h2", { 
             scale: 0.8, 
             opacity: 0, 
-            duration: 1.2, 
+            duration: 0.8, 
             ease: "back.out(1.7)" 
           })
           .from("#join-team .space-y-4 p", { 
             y: 30, 
             opacity: 0, 
-            duration: 0.8, 
-            stagger: 0.2, 
+            duration: 0.6, 
+            stagger: 0.15, 
             ease: "power3.out" 
-          }, "-=0.8")
+          }, "-=0.6")
           .from("#join-team button, #join-team a", { 
             y: 30, 
             opacity: 0, 
-            duration: 0.8, 
-            stagger: 0.15, 
+            duration: 0.6, 
+            stagger: 0.1, 
             ease: "power3.out" 
-          }, "-=0.4")
+          }, "-=0.3")
           .from("#join-team .grid > div", { 
             y: 50, 
             opacity: 0, 
-            duration: 0.8, 
-            stagger: 0.2, 
+            duration: 0.6, 
+            stagger: 0.15, 
             ease: "back.out(1.7)" 
-          }, "-=0.6");
+          }, "-=0.4");
       }
     });
 
@@ -775,8 +778,8 @@
         gsap.from("#footer .grid > div", { 
           y: 50, 
           opacity: 0, 
-          duration: 0.8, 
-          stagger: 0.2, 
+          duration: 0.6, 
+          stagger: 0.15, 
           ease: "power3.out" 
         });
       }
@@ -787,7 +790,7 @@
       card.addEventListener('mouseenter', () => {
         gsap.to(card, { 
           scale: 1.05, 
-          duration: 0.3, 
+          duration: 0.2, 
           ease: "power2.out" 
         });
       });
@@ -795,7 +798,7 @@
       card.addEventListener('mouseleave', () => {
         gsap.to(card, { 
           scale: 1, 
-          duration: 0.3, 
+          duration: 0.2, 
           ease: "power2.out" 
         });
       });
@@ -807,7 +810,7 @@
         gsap.to(card, { 
           y: -10, 
           scale: 1.02,
-          duration: 0.4, 
+          duration: 0.3, 
           ease: "power2.out" 
         });
       });
@@ -816,7 +819,7 @@
         gsap.to(card, { 
           y: 0, 
           scale: 1,
-          duration: 0.4, 
+          duration: 0.3, 
           ease: "power2.out" 
         });
       });
@@ -860,7 +863,7 @@
         const target = document.querySelector(this.getAttribute('href'));
         if (target) {
           gsap.to(window, {
-            duration: 1,
+            duration: 0.8,
             scrollTo: target,
             ease: "power2.inOut"
           });

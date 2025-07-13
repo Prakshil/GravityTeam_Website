@@ -1,13 +1,30 @@
 {
-  "name": "gq-ui",
+  "name": "gravity-team-website",
   "version": "1.0.0",
-  "description": "A Tailwind CSS project",
-  "main": "src/index.html",
+  "description": "Gravity Team - Advanced Crypto Trading Solutions Website",
+  "main": "index.html",
   "scripts": {
-    "start": "tailwindcss -i ./src/input.css -o ./src/output.css --watch",
-    "build": "tailwindcss -i ./src/input.css -o ./src/output.css --minify"
+    "dev": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch",
+    "build": "npx tailwindcss -i ./src/input.css -o ./src/output.css --minify",
+    "start": "npm run build && npx serve .",
+    "serve": "npx serve ."
   },
+  "keywords": [
+    "crypto",
+    "trading",
+    "market-making",
+    "tailwindcss",
+    "gsap",
+    "responsive"
+  ],
+  "author": "Prakshil Patel",
+  "license": "MIT",
   "devDependencies": {
+    "serve": "^14.2.4",
     "tailwindcss": "^3.4.17"
+  },
+  "dependencies": {
+    "@tailwindcss/forms": "^0.5.10",
+    "@tailwindcss/typography": "^0.5.16"
   }
 }
