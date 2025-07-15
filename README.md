@@ -2,6 +2,10 @@
 
 A modern, responsive crypto trading website built with Tailwind CSS and GSAP animations.
 
+## 🌐 Live Website
+
+Visit our live website: **[GravityTeam.app](gravityteam21-e5da77.netlify.app/)**
+
 ## 🚀 Features
 
 - **Responsive Design**: Mobile-first approach with seamless desktop experience
